@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="index.html">
+                <div class="align-content-center"><img src="img/logo.png" alt="logo"></div>
+                <div class="ms-3 text-white">
+                    <h1 class="m-0 fs-4">Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="text-white nav-link px-4" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link px-4" href="page.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link px-4" href="page.html" aria-disabled="true">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link px-4" href="page.html" aria-disabled="true">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="text-white nav-link px-4" href="contact.html" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="overflow-auto indexMain">
+        <div class="container">
+            <div class="search input-group my-4 mt-5 p-2 rounded-5">
+                <input type="search" placeholder="Find Your location..." class="inputSearch text-white form-control border-0"
+                    id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                <button class="btn btn-primary rounded-5 px-5" type="button" id="inputGroupFileAddon03">Find</button>
+            </div>
+
+            <div class="d-flex flex-wrap mb-5">
+                <div class="card-one text-white col-12 col-md-4">
+                    <div class="d-flex header p-3">
+                        <p class="day m-0">Tuesday</p>
+                        <p class="ms-auto m-0 date">2July</p>
+                    </div>
+                    <div class="p-4">
+                        <p class="city">Cairo</p>
+                        <div class="degree">
+                            <p class="temp d-inline-block">32.2</p><span class="fs-1"> <sup>o</sup>C</span>
+                            <div>
+                                <img class="weatherImg" src="img/mo.png" alt="moon">
+                            </div>
+                        </div>
+                        <p class="custom text-primary">Clear</p>
+                        <div class="d-flex">
+                            <p class="me-3"><img src="img/icon-umberella.png" alt="umberella"> <span class="humidity">
+                                    20</span>%</p>
+                            <p class="me-3"><img src="img/icon-wind.png" alt="wind"> <span class="wind"> 18</span> km/h
+                            </p>
+                            <p><img src="img/icon-compass.png" alt="compass"> <span class="dir"> East</span> </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-two text-white col-12 col-md-4 text-center">
+                    <div class="header p-3">
+                        <p class="day m-0">Tuesday</p>
+                    </div>
+                    <div class="p-3">
+                        <div>
+                            <img src="img/113.png" class="weatherImg" alt="san">
+                        </div>
+                        <div class="degree">
+                            <p class="temp d-inline-block fs-1">32.2</p> <span> <sup>o</sup>C</span><br>
+                            <p class="tempp d-inline-block fs-3">28.6</p> <span> <sup>o</sup></span>
+                            <p class="custom text-primary">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-three text-white col-12 col-md-4 text-center ">
+                    <div class="header p-3">
+                        <p class="day m-0">Tuesday</p>
+                    </div>
+                    <div class="p-3">
+                        <div>
+                            <img src="img/113.png" class="weatherImg" alt="san">
+                        </div>
+                        <div class="degree">
+                            <p class="temp d-inline-block fs-1">32.2</p> <span> <sup>o</sup>C</span><br>
+                            <p class="tempp d-inline-block fs-3">28.6</p> <span> <sup>o</sup></span>
+                            <p class="custom text-primary">Sunny</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer class="overflow-auto">
+        <div class="container my-5">
+            <div class="d-flex flex-wrap">
+                <div class="col-12 col-md-9">
+                    <div class="input-group p-2 rounded-5">
+                        <input type="search" placeholder="Enter Your email to subscribe..."
+                            class="form-control border-0 text-white" id="inputGroupFile03"
+                            aria-describedby="inputGroupFileAddon03">
+                        <button class="btn btn-primary rounded-5 px-5" type="button"
+                            id="inputGroupFileAddon03">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="text-start text-lg-end mt-3 mt-lg-0 align-content-center col-12 col-lg-3">
+                    <span class="rounded-circle p-2 text-center mx-1">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                    <span class="rounded-circle p-2 text-center mx-1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <span class="rounded-circle p-2 text-center mx-1">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </span>
+                    <span class="rounded-circle p-2 text-center mx-1">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </span>
+                </div>
+            </div>
+            <p class="text-white my-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

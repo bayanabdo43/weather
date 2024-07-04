@@ -1,0 +1,142 @@
+:root{
+    --main-color : #1e202b;
+    --second-color : #262936;
+}
+nav{
+    background-color: var(--main-color);
+    small{
+        font-size: 10px;
+    }
+    ul li{
+        transition: 0.4s;
+        margin: 0 5px 0 0;
+    }
+    ul li:hover{
+        border: #009ad8 solid 3px;
+        border-radius: 50px;
+    }
+    ul li:hover a{
+        color: #009ad8 !important;
+    }
+    ul li.active{
+        border: #009ad8 solid 3px;
+        border-radius: 50px;
+    }
+}
+
+.indexMain{
+    background-image: url(../img/banner.png);
+    background-color: var(--main-color);
+    background-repeat: no-repeat;
+    .input-group ,.form-control {
+        background-color: var(--main-color);
+    }
+    .card-one .temp , .card-one .temp+span{
+        font-size: 65px;
+        font-weight: 700;
+    }
+    .card-one , .card-three{
+        background-color: #323544;
+        .header{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    .card-two{
+        background-color: #262936;
+        .header{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+footer{
+    background-color: var(--second-color);
+    .input-group ,.form-control {
+        background-color: var(--main-color);
+    }
+    span{
+        background-color: var(--main-color);
+        i{
+            width: 20px;
+            height: 20px;
+            color:#009ad8;
+        }
+        &:hover{
+            background-color: #009ad8;
+        }
+        &:hover i{
+            color: white;
+        }
+    }
+}
+
+.form-control:focus{
+    background-color: var(--main-color) !important;
+    box-shadow:none !important;
+}
+input::placeholder{
+    color: #bfc1c8 !important;
+}
+
+.contactMain{
+    background-color: var(--main-color);
+
+    .breadcrumb{
+        background-color: var(--second-color);
+    }
+    .contact{
+        background-color: var(--second-color);
+        max-height: 320px;
+    }
+    form input{
+        border: 2px solid #393c48;
+        &::placeholder{
+            color: #393c48 !important;
+        }
+        &:hover{
+            border: 3px solid #009ad8;
+        }
+    }
+   
+    form textarea{
+        border: 2px solid #393c48;
+        min-height: 150px;
+        &::placeholder{
+            color: #393c48;
+        }
+        &:hover{
+            border: 3px solid #009ad8;
+        }
+    }
+    .map{
+        height: 190px;
+    }
+}
+
+.pageMain{
+    background-color: rgb(52, 56, 60);
+}
+
+/*media query*/
+
+@media (max-width:767px){
+    .card-one{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .card-three{
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+}
+
+@media (min-width:768px) {
+  .card-one{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .card-three{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
